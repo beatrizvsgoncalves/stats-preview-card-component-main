@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: hsl(233, 47%, 7%);
+    --card-bg: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-size: 15px;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background-color: var(--card-bg);
+    border-radius: .5rem;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 49rem;
+    width: 20.5rem;
+}
+
+header {
+    background: 
+        linear-gradient(rgba(106, 7, 160, 0.6),rgba(106, 7, 160, 0.6)), 
+        url("./images/image-header-mobile.jpg") center / cover no-repeat;
+    border-radius: .5rem .5rem 0 0;
+    filter: blur(0.04rem);
+    height: 15rem;
+}
+
+h1, p {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 1.9em;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+#word-decoration {
+    color: var(--soft-violet)
+}
+
+p {
+    color: var(--main-paragraph);
+    line-height: 1.7em;
+    padding: 0 1.8rem;
+}
+
+section#stats-container {
+    margin-top: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+article {
+    margin-top: 1.5rem;
+}
+
+.stat {
+    color: var(--white);
+    font: 700 1.5em "Inter", sans-serif;    
+}
+
+.stat-headings {
+    color: var(--stat-headings);
+    font: 1.2em "Lexend Deca", sans-serif;
+    font-variant: small-caps;
+}
+
+footer div.attribution {
+    color: rgba(245, 245, 245, 0.514);
+    font-family: 1em "Lexend Deca", sans-serif;
+    padding: 2rem;
+}
+
+footer div.attribution p {
+    padding: 0;
+}
+
+footer div.attribution a {
+    color: hsla(277, 64%, 61%, 0.815);
+    text-decoration: none;
+}

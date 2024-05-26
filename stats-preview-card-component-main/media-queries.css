@@ -1,0 +1,47 @@
+@media screen and (min-width:1000px) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+
+        height: 25rem;
+        width: 62rem;
+    }
+    
+    header {
+        border-radius: 0 .5rem .5rem 0;
+        height: 100%;
+        width: 30rem;
+    }
+
+    h1 {
+        font-size: 2.3em;
+        padding: 0;
+    }
+
+    p {
+        font-size: 1em;
+        padding: 1rem 3rem 2rem 0;
+    }
+
+    section#texts {
+        padding: 3.5rem 4rem 4rem 4rem;
+        text-align: start;
+        width: 32rem;
+    }
+
+    section#stats-container {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        margin: auto;
+    }
+
+    .stat {
+        font-size: 1.6em;
+    }
+}
